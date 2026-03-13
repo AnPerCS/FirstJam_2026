@@ -16,12 +16,13 @@ public class CharacterAbility : MonoBehaviour
     private bool isResizing = false;
     private Vector3 targetSize = Vector3.one;
     private Vector3 treeSize;
+    [SerializeField] private ProjectilePool pool;
 
-   
-   
+
+
     void Start()
     {
-       
+
     }
 
 
@@ -31,16 +32,16 @@ public class CharacterAbility : MonoBehaviour
         HandleRotation();
 
         if (Input.GetMouseButton(0) && !isShooting)
-        {   
+        {
             StartCoroutine(Shoot());
         }
 
-        if(Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(1))
         {
             Teleport();
         }
 
-        if(Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             GetSize();
         }
@@ -61,10 +62,14 @@ public class CharacterAbility : MonoBehaviour
     private IEnumerator Shoot()
     {
         isShooting = true;
-        bulletInstance = Instantiate(bulletPrefab, shotPoint.position, Quaternion.identity);
-        bulletPos = bulletInstance.GetComponent<Transform>();
+
+        bulletInstance = pool.Pool.Get();
+
+        bulletInstance.transform.position = shotPoint.position;
+        bulletInstance.transform.rotation = Quaternion.identity;
+
         Rigidbody2D bulletRb = bulletInstance.GetComponent<Rigidbody2D>();
-        Destroy(bulletInstance.gameObject, 5f);
+        bulletRb.linearVelocity = Vector2.zero;
         bulletRb.AddForce(pivotTransform.right * bulletSpeed, ForceMode2D.Impulse);
 
         yield return new WaitForSeconds(0.5f);
@@ -73,9 +78,10 @@ public class CharacterAbility : MonoBehaviour
 
     void Teleport()
     {
-        if (bulletInstance == null) return;
-        transform.position = bulletPos.position;
-        Destroy(bulletInstance.gameObject);
+        if (bulletInstance == null || !bulletInstance.activeSelf) return;
+        transform.position = bulletInstance.transform.position;
+        pool.Pool.Release(bulletInstance);
+        bulletInstance = null;
     }
 
     void GetSize()
@@ -90,17 +96,17 @@ public class CharacterAbility : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D other)
     {
-        if(other.gameObject.CompareTag("Interactable"))
+        if (other.gameObject.CompareTag("Interactable"))
         {
             targetSize = other.transform.localScale;
             Destroy(other.gameObject, 2f);
-            
+
         }
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.CompareTag("Tree") && transform.localScale != Vector3.one)
+        if (other.gameObject.CompareTag("Tree") && transform.localScale != Vector3.one)
         {
             if (isResizing) return;
             isResizing = true;
@@ -115,7 +121,7 @@ public class CharacterAbility : MonoBehaviour
         }
     }
 
-   
+
     void ResetSize()
     {
         transform.localScale = Vector3.one;
