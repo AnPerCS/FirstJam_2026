@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Prototype\Scripts\CharacterAbility.cs" />
+    <Compile Include="Assets\Scripts\test1.cs" />
     <Compile Include="Assets\Prototype\Scripts\Character_Controller.cs" />
     <Compile Include="Assets\Prototype\Scripts\TreeScript.cs" />
   </ItemGroup>
