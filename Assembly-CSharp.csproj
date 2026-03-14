@@ -63,7 +63,7 @@
     <Compile Include="Assets\Scripts\Projectile\Projectile.cs" />
     <Compile Include="Assets\Scripts\ObjectPool\ProjectilePool.cs" />
     <Compile Include="Assets\Prototype\Scripts\CharacterAbility.cs" />
-    <Compile Include="Assets\Scripts\test1.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Prototype\Scripts\Character_Controller.cs" />
     <Compile Include="Assets\Prototype\Scripts\TreeScript.cs" />
   </ItemGroup>
