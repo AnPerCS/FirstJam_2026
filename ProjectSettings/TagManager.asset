@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Enemy
   - Projectile
+  - Border
+  - Tree
+  - Goal
+  - Consumable
   layers:
   - Default
   - TransparentFX
