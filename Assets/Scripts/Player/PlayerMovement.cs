@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private ProjectilePool projectilePool; 
     [SerializeField] private VFXPool teleportVFXPool;
 
-    private GameObject latestBullet;
+    private GameObject latestProjectile;
     private bool isShooting;
     private Rigidbody2D rb;
     private bool isGrounded;
@@ -56,15 +56,16 @@ public class PlayerMovement : MonoBehaviour
     {
         isShooting = true;
 
-        GameObject bulletObj = projectilePool.Pool.Get();
-        bulletObj.transform.SetPositionAndRotation(shotPoint.position, shotPoint.rotation);
+        GameObject projectileObj = projectilePool.Pool.Get();
+        projectileObj.transform.SetPositionAndRotation(shotPoint.position, shotPoint.rotation);
+        projectileObj.transform.localScale = transform.localScale; // change projectile size to current size 
 
-        if (bulletObj.TryGetComponent(out Projectile proj))
+        if (projectileObj.TryGetComponent(out Projectile proj))
         {
             proj.Launch();
         }
 
-        latestBullet = bulletObj;
+        latestProjectile = projectileObj;
 
         yield return new WaitForSeconds(fireRate);
         isShooting = false;
@@ -72,19 +73,19 @@ public class PlayerMovement : MonoBehaviour
 
     private void Teleport()
     {
-        if (latestBullet == null || !latestBullet.activeSelf) return;
+        if (latestProjectile == null || !latestProjectile.activeSelf) return;
 
         GameObject smokeStart = teleportVFXPool.GetPool(0).Get();
         smokeStart.transform.position = transform.position;
 
-        transform.position = latestBullet.transform.position;
+        transform.position = latestProjectile.transform.position;
         rb.linearVelocity = Vector2.zero;
 
         GameObject smokeEnd = teleportVFXPool.GetPool(1).Get();
         smokeEnd.transform.position = transform.position;
 
-        projectilePool.Pool.Release(latestBullet);
-        latestBullet = null;
+        projectilePool.Pool.Release(latestProjectile);
+        latestProjectile = null;
     }
 
     void FixedUpdate()
