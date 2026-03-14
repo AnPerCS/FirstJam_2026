@@ -15,8 +15,11 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Projectile Settings")]
     [SerializeField] private Transform shotPoint;
-    [SerializeField] private ProjectilePool pool;
     [SerializeField] private float fireRate = 0.2f;
+
+    [Header("Pool References")]
+    [SerializeField] private ProjectilePool projectilePool; 
+    [SerializeField] private VFXPool teleportVFXPool;
 
     private GameObject latestBullet;
     private bool isShooting;
@@ -53,7 +56,7 @@ public class PlayerMovement : MonoBehaviour
     {
         isShooting = true;
 
-        GameObject bulletObj = pool.Pool.Get();
+        GameObject bulletObj = projectilePool.Pool.Get();
         bulletObj.transform.SetPositionAndRotation(shotPoint.position, shotPoint.rotation);
 
         if (bulletObj.TryGetComponent(out Projectile proj))
@@ -71,10 +74,16 @@ public class PlayerMovement : MonoBehaviour
     {
         if (latestBullet == null || !latestBullet.activeSelf) return;
 
+        GameObject smokeStart = teleportVFXPool.GetPool(0).Get();
+        smokeStart.transform.position = transform.position;
+
         transform.position = latestBullet.transform.position;
         rb.linearVelocity = Vector2.zero;
 
-        pool.Pool.Release(latestBullet);
+        GameObject smokeEnd = teleportVFXPool.GetPool(1).Get();
+        smokeEnd.transform.position = transform.position;
+
+        projectilePool.Pool.Release(latestBullet);
         latestBullet = null;
     }
 
