@@ -99,3 +99,4 @@ ServerData
 [Aa]ssets[Ii]nit[Tt]est[Ss]cene.unity
 first jam.sln
 Assembly-CSharp.csproj
+*.csproj
