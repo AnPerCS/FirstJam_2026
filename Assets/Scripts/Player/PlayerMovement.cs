@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float fireRate = 0.2f;
 
     [Header("Pool References")]
-    [SerializeField] private ProjectilePool projectilePool; 
+    [SerializeField] private ProjectilePool projectilePool;
     [SerializeField] private VFXPool teleportVFXPool;
 
     private GameObject latestProjectile;
@@ -26,10 +26,12 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private bool isGrounded;
     private bool jumpRequested;
+    private Animator animator;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponentInChildren<Animator>();
     }
 
     void Update()
@@ -58,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
 
         GameObject projectileObj = projectilePool.Pool.Get();
         projectileObj.transform.SetPositionAndRotation(shotPoint.position, shotPoint.rotation);
-        projectileObj.transform.localScale = transform.localScale; // change projectile size to current size 
+        projectileObj.transform.localScale = transform.localScale;
 
         if (projectileObj.TryGetComponent(out Projectile proj))
         {
@@ -80,6 +82,11 @@ public class PlayerMovement : MonoBehaviour
 
         transform.position = latestProjectile.transform.position;
         rb.linearVelocity = Vector2.zero;
+
+        if (animator != null)
+        {
+            animator.SetTrigger("Teleport");
+        }
 
         GameObject smokeEnd = teleportVFXPool.GetPool(1).Get();
         smokeEnd.transform.position = transform.position;
@@ -107,8 +114,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void CheckGround()
     {
-        isGrounded = Physics2D.Raycast(transform.position, Vector2.down, rayLength, groundLayer);
-        Debug.DrawRay(transform.position, Vector2.down * rayLength, isGrounded ? Color.green : Color.red);
+        float adjustedRay = rayLength * transform.localScale.y;
+        isGrounded = Physics2D.Raycast(transform.position, Vector2.down, adjustedRay, groundLayer);
+        Debug.DrawRay(transform.position, Vector2.down * adjustedRay, isGrounded ? Color.green : Color.red);
     }
 
     private void HandleRotation()
