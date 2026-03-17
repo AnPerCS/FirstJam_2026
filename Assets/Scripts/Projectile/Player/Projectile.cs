@@ -5,6 +5,8 @@ using UnityEngine.Pool;
 public class Projectile : MonoBehaviour
 {
     [SerializeField] private float bulletSpeed = 20f;
+    [SerializeField] private float damage = 1f; 
+
     private IObjectPool<GameObject> _pool;
     private Rigidbody2D rb;
 
@@ -35,6 +37,7 @@ public class Projectile : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
+            collision.gameObject.GetComponent<IDamageable>().TakeDamage(damage);
             ReturnToPool();
         }
     }

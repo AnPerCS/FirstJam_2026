@@ -10,6 +10,8 @@ TagManager:
   - Tree
   - Goal
   - Consumable
+  - EnemyProjectile
+  - Obstacle
   layers:
   - Default
   - TransparentFX
@@ -19,7 +21,7 @@ TagManager:
   - UI
   - Enemy
   - Projectile
-  - 
+  - Player
   - 
   - 
   - 
