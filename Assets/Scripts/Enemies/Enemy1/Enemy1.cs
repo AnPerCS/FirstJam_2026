@@ -1,46 +1,31 @@
-using Unity.Behavior;
 using UnityEngine;
 
-public class Enemy1 : MonoBehaviour
+public class Enemy1 : Enemy
 {
-    [SerializeField] private float maxHealth;
-    [SerializeField] private Transform PlayerTransform;
-    
-    HealthComponent healthComponent;
-    BehaviorGraphAgent behaviorAgent;
-
-    private void Awake()
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
     {
-        healthComponent = GetComponent<HealthComponent>();
-        behaviorAgent = GetComponent<BehaviorGraphAgent>();
-        behaviorAgent.BlackboardReference.SetVariableValue("PlayerTransform", PlayerTransform);
+        
     }
 
-    private void Start()
+    // Update is called once per frame
+    void Update()
     {
-        healthComponent.SetMaxHealth(maxHealth);
-        healthComponent.ResetHealth();
+        
     }
 
-    private void OnDamaged()
+    protected override void OnDamaged()
     {
-        //play damage animation
+
+
+        base.OnDamaged();
     }
 
-    private void OnDeath()
+    protected override void OnDeath()
     {
-        Destroy(gameObject);
-    }
 
-    private void OnEnable()
-    {
-        healthComponent.OnDamaged += OnDamaged;
-        healthComponent.OnDeath += OnDeath;
-    }
 
-    private void OnDisable()
-    {
-        healthComponent.OnDamaged -= OnDamaged;
-        healthComponent.OnDeath -= OnDeath;
+
+        base.OnDeath();
     }
 }
