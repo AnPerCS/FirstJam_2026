@@ -9422,11 +9422,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4323505795447431261, guid: 68719e0180b7ed542901e4b640b39923, type: 3}
       propertyPath: maxSpawnTime
-      value: 10
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4323505795447431261, guid: 68719e0180b7ed542901e4b640b39923, type: 3}
       propertyPath: minSpawnTime
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4323505795447431261, guid: 68719e0180b7ed542901e4b640b39923, type: 3}
       propertyPath: 'enemyPoolObjects.Array.data[0]'
