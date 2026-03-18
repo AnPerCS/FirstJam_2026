@@ -7,6 +7,17 @@ public class EnemyProjectile1 : MonoBehaviour
 
     [SerializeField] private float damage = 1f;
 
+    Animator animator;
+    Collider2D _collider2d;
+    MoveUp moveUp;
+
+    private void Awake()
+    {
+        animator = GetComponent<Animator>();
+        _collider2d = GetComponent<Collider2D>();
+        moveUp = GetComponent<MoveUp>();
+    }
+
     public void SetPool(IObjectPool<GameObject> pool)
     { 
         this.pool = pool; 
@@ -21,7 +32,16 @@ public class EnemyProjectile1 : MonoBehaviour
 
         if (!collision.gameObject.CompareTag("EnemyProjectile") && !collision.gameObject.CompareTag("Enemy"))
         {
-            pool.Release(gameObject);
+            animator.SetTrigger("OnHit");
+            GetComponent<MoveUp>().enabled = false;
+            _collider2d.enabled = false;
+            moveUp.enabled = false;
         }
     }
+
+    public void OnOnHitAnimationDone()
+    {
+        pool.Release(gameObject);
+    }
+    
 }

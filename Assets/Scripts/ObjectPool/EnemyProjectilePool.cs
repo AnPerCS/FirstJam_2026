@@ -14,7 +14,12 @@ public class EnemyProjectilePool : MonoBehaviour
     {
         pool = new ObjectPool<GameObject>(
             () => CreateEnemy(),
-            (obj) => obj.SetActive(true),
+            (obj) =>
+            {
+                obj.SetActive(true);
+                obj.GetComponent<Collider2D>().enabled = true;
+                obj.GetComponent<MoveUp>().enabled = true;
+            },
             (obj) => obj.SetActive(false),
             (obj) => Destroy(obj)
             );
