@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: e6513f2cdb700064aa35b66e839a3244
+guid: d670b8186bb32a54480aa2a5a8e661ca
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -518891458086142027
-    second: Plant_teleport-Sheet_0
+      213: 2631103260818236658
+    second: Beetle_0
   - first:
-      213: 7245309500797063942
-    second: Plant_teleport-Sheet_1
+      213: 7801186258100458736
+    second: Beetle_1
   - first:
-      213: 3034706613642519493
-    second: Plant_teleport-Sheet_2
+      213: -3665364186405681620
+    second: Beetle_2
   - first:
-      213: -8107730776117640013
-    second: Plant_teleport-Sheet_3
+      213: -7567055186130341114
+    second: Beetle_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -60,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 50
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,43 +105,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Plant_teleport-Sheet_0
+      name: Beetle_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 64
-        height: 64
+        x: 7
+        y: 39
+        width: 18
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5bf7ac3d7f68cc8f0800000000000000
-      internalID: -518891458086142027
+      spriteID: 2f4617cb97e838420800000000000000
+      internalID: 2631103260818236658
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Plant_teleport-Sheet_1
+      name: Beetle_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 64
-        height: 64
+        x: 36
+        y: 39
+        width: 21
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,20 +146,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 60395ca8a928c8460800000000000000
-      internalID: 7245309500797063942
+      spriteID: 0f49cbcb191634c60800000000000000
+      internalID: 7801186258100458736
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Plant_teleport-Sheet_2
+      name: Beetle_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
-        width: 64
-        height: 64
+        x: 7
+        y: 7
+        width: 21
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,20 +168,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5c3e0b726917d1a20800000000000000
-      internalID: 3034706613642519493
+      spriteID: c26c9d041b2022dc0800000000000000
+      internalID: -3665364186405681620
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Plant_teleport-Sheet_3
+      name: Beetle_3
       rect:
         serializedVersion: 2
-        x: 192
-        y: 0
-        width: 64
-        height: 64
+        x: 38
+        y: 9
+        width: 20
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,8 +190,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3b48103d0dd8b7f80800000000000000
-      internalID: -8107730776117640013
+      spriteID: 6037ce2766b6cf690800000000000000
+      internalID: -7567055186130341114
       vertices: []
       indices: 
       edges: []
@@ -226,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: ae915e57192d6d145980dd2cf11c396b
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -236,10 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Plant_teleport-Sheet_0: -518891458086142027
-      Plant_teleport-Sheet_1: 7245309500797063942
-      Plant_teleport-Sheet_2: 3034706613642519493
-      Plant_teleport-Sheet_3: -8107730776117640013
+      Beetle_0: 2631103260818236658
+      Beetle_1: 7801186258100458736
+      Beetle_2: -3665364186405681620
+      Beetle_3: -7567055186130341114
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -15,7 +15,11 @@ public partial class ProjectileAttackAction : Action
     {
         GameObject projectileObj = EnemyProjectilePool.Value.Pool.Get();
         projectileObj.transform.up = PlayerTransform.Value.position - Self.Value.transform.position;
-        projectileObj.transform.position = Self.Value.transform.position;
+
+        Vector3 selfPosition = Self.Value.transform.position;
+        Vector3 newPosition = new Vector3(selfPosition.x, selfPosition.y, 0);
+        projectileObj.transform.position = newPosition;
+        
         return Status.Success;
     }
 }

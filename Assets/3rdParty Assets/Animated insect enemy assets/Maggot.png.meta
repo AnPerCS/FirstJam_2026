@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: e6513f2cdb700064aa35b66e839a3244
+guid: 26df033b74b86324995ad4722f7c263e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -518891458086142027
-    second: Plant_teleport-Sheet_0
+      213: -7577871711854776624
+    second: Maggot_0
   - first:
-      213: 7245309500797063942
-    second: Plant_teleport-Sheet_1
+      213: -3229736588943679682
+    second: Maggot_1
   - first:
-      213: 3034706613642519493
-    second: Plant_teleport-Sheet_2
+      213: -2569946139449091884
+    second: Maggot_2
   - first:
-      213: -8107730776117640013
-    second: Plant_teleport-Sheet_3
+      213: 1096604936654709883
+    second: Maggot_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -60,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 50
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,43 +105,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Plant_teleport-Sheet_0
+      name: Maggot_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 64
-        height: 64
+        x: 6
+        y: 32
+        width: 15
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5bf7ac3d7f68cc8f0800000000000000
-      internalID: -518891458086142027
+      spriteID: 0de2a6dc3ddf5d690800000000000000
+      internalID: -7577871711854776624
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Plant_teleport-Sheet_1
+      name: Maggot_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 64
-        height: 64
+        x: 40
+        y: 32
+        width: 22
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,20 +146,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 60395ca8a928c8460800000000000000
-      internalID: 7245309500797063942
+      spriteID: e3f1ee92fabad23d0800000000000000
+      internalID: -3229736588943679682
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Plant_teleport-Sheet_2
+      name: Maggot_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 1
         y: 0
-        width: 64
-        height: 64
+        width: 24
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,20 +168,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5c3e0b726917d1a20800000000000000
-      internalID: 3034706613642519493
+      spriteID: 4d810423a97b55cd0800000000000000
+      internalID: -2569946139449091884
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Plant_teleport-Sheet_3
+      name: Maggot_3
       rect:
         serializedVersion: 2
-        x: 192
+        x: 43
         y: 0
-        width: 64
-        height: 64
+        width: 17
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,8 +190,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3b48103d0dd8b7f80800000000000000
-      internalID: -8107730776117640013
+      spriteID: b746e3c316ce73f00800000000000000
+      internalID: 1096604936654709883
       vertices: []
       indices: 
       edges: []
@@ -226,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: ae915e57192d6d145980dd2cf11c396b
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -236,10 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Plant_teleport-Sheet_0: -518891458086142027
-      Plant_teleport-Sheet_1: 7245309500797063942
-      Plant_teleport-Sheet_2: 3034706613642519493
-      Plant_teleport-Sheet_3: -8107730776117640013
+      Maggot_0: -7577871711854776624
+      Maggot_1: -3229736588943679682
+      Maggot_2: -2569946139449091884
+      Maggot_3: 1096604936654709883
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
