@@ -294,7 +294,7 @@ GameObject:
   - component: {fileID: 282926704}
   - component: {fileID: 282926702}
   - component: {fileID: 282926707}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -6681,6 +6681,17 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &1624709254 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3134496045138854347, guid: b605ff2934606e9498a8f8e0d778c278, type: 3}
+  m_PrefabInstance: {fileID: 1058837227}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a271e23bc7e50e47bf10938c0397302, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1632897346
 GameObject:
   m_ObjectHideFlags: 0
@@ -9429,7 +9440,15 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4323505795447431261, guid: 68719e0180b7ed542901e4b640b39923, type: 3}
+      propertyPath: enemyPoolObjects.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4323505795447431261, guid: 68719e0180b7ed542901e4b640b39923, type: 3}
       propertyPath: 'enemyPoolObjects.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1624709254}
+    - target: {fileID: 4323505795447431261, guid: 68719e0180b7ed542901e4b640b39923, type: 3}
+      propertyPath: 'enemyPoolObjects.Array.data[1]'
       value: 
       objectReference: {fileID: 1036845655}
     - target: {fileID: 7963137217737307051, guid: 68719e0180b7ed542901e4b640b39923, type: 3}

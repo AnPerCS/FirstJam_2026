@@ -13,9 +13,11 @@ GameObject:
   - component: {fileID: 7662664240248648928}
   - component: {fileID: 8279125717246123638}
   - component: {fileID: 8341407449823635341}
+  - component: {fileID: 703123539311119072}
   - component: {fileID: 6760572993083008691}
   - component: {fileID: 1469454009433765164}
   - component: {fileID: 1766711048547797387}
+  - component: {fileID: 2141619313531776334}
   m_Layer: 0
   m_Name: Enemy1
   m_TagString: Enemy
@@ -33,8 +35,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.08, y: 0.25, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -51,7 +53,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1
-  PlayerTransform: {fileID: 0}
 --- !u!114 &7662664240248648928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69,6 +70,7 @@ MonoBehaviour:
   - rid: 2902455981878280391
   - rid: 2902455981878280410
   - rid: 2902455981878280870
+  - rid: 2902456030879023308
   m_OriginalGraph: {fileID: 4736166237508879704, guid: ce0a04d94b7c73f4c98f085e1dfbbc33, type: 2}
   m_IsInitialised: 0
   m_IsStarted: 0
@@ -100,6 +102,14 @@ MonoBehaviour:
           m_Value1: 14632062369287456498
         Name: NavAgent
         m_Value: {fileID: 1469454009433765164}
+    - rid: 2902456030879023308
+      type: {class: 'BlackboardVariable`1[[UnityEngine.Animator, UnityEngine.AnimationModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 2213940469758420413
+          m_Value1: 677768432848266874
+        Name: Animator
+        m_Value: {fileID: 2141619313531776334}
 --- !u!114 &8279125717246123638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,6 +132,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 565e945f9419c3245862ad23fb4dc5a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &703123539311119072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5320375942574323145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0703eec405659f4a86db0ccc5430f76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &6760572993083008691
@@ -168,7 +190,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: -2120087851, guid: 8685607c4cbb3fe469c9d2038a50edc0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -188,7 +210,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 5320375942574323145}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.5
+  m_Radius: 0.13
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -197,8 +219,8 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1
-  m_BaseOffset: 0
+  m_Height: 0.3
+  m_BaseOffset: 0.16
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!58 &1766711048547797387
@@ -235,5 +257,27 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
+  m_Offset: {x: 0, y: -0.02}
+  m_Radius: 0.16
+--- !u!95 &2141619313531776334
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5320375942574323145}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9be12325a6eca3a468897e29166c2795, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

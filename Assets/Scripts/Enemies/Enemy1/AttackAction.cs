@@ -16,7 +16,7 @@ public partial class MeleeAttackAction : Action
     {
         Transform selfTransform = Self.Value.transform;
         int playerLayerMask = LayerMask.GetMask("Player");
-        RaycastHit2D hit = Physics2D.Raycast(selfTransform.position, ((Vector2)Target.Value.transform.position - (Vector2)selfTransform.position).normalized, 1000, playerLayerMask);
+        RaycastHit2D hit = Physics2D.Raycast(selfTransform.position, ((Vector2)Target.Value.transform.position - (Vector2)selfTransform.position).normalized, 10, playerLayerMask);
         if (hit.collider != null)
         {
             hit.collider.gameObject.GetComponent<IDamageable>().TakeDamage(Damage);

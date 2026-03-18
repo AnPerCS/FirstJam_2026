@@ -172,10 +172,10 @@ TextureImporter:
       name: MantisAttack_0
       rect:
         serializedVersion: 2
-        x: 3
+        x: 0
         y: 96
-        width: 26
-        height: 27
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,7 +197,7 @@ TextureImporter:
         x: 32
         y: 96
         width: 32
-        height: 28
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,10 +216,10 @@ TextureImporter:
       name: MantisAttack_2
       rect:
         serializedVersion: 2
-        x: 63
-        y: 98
-        width: 34
-        height: 27
+        x: 64
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -238,10 +238,10 @@ TextureImporter:
       name: MantisAttack_3
       rect:
         serializedVersion: 2
-        x: 97
+        x: 96
         y: 96
-        width: 30
-        height: 26
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,10 +260,10 @@ TextureImporter:
       name: MantisAttack_4
       rect:
         serializedVersion: 2
-        x: 126
-        y: 95
-        width: 98
-        height: 28
+        x: 128
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -282,10 +282,10 @@ TextureImporter:
       name: MantisAttack_5
       rect:
         serializedVersion: 2
-        x: 2
-        y: 64
-        width: 28
-        height: 27
+        x: 160
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -304,10 +304,10 @@ TextureImporter:
       name: MantisAttack_6
       rect:
         serializedVersion: 2
-        x: 34
-        y: 64
-        width: 29
-        height: 28
+        x: 192
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -326,10 +326,10 @@ TextureImporter:
       name: MantisAttack_7
       rect:
         serializedVersion: 2
-        x: 66
-        y: 66
-        width: 30
-        height: 28
+        x: 0
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -348,10 +348,10 @@ TextureImporter:
       name: MantisAttack_8
       rect:
         serializedVersion: 2
-        x: 98
+        x: 32
         y: 64
-        width: 31
-        height: 26
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -370,10 +370,10 @@ TextureImporter:
       name: MantisAttack_9
       rect:
         serializedVersion: 2
-        x: 130
+        x: 64
         y: 64
-        width: 29
-        height: 26
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -392,10 +392,10 @@ TextureImporter:
       name: MantisAttack_10
       rect:
         serializedVersion: 2
-        x: 162
+        x: 96
         y: 64
-        width: 27
-        height: 26
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -414,10 +414,10 @@ TextureImporter:
       name: MantisAttack_11
       rect:
         serializedVersion: 2
-        x: 194
+        x: 128
         y: 64
-        width: 28
-        height: 27
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -436,10 +436,10 @@ TextureImporter:
       name: MantisAttack_12
       rect:
         serializedVersion: 2
-        x: 2
-        y: 32
-        width: 28
-        height: 27
+        x: 160
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -458,10 +458,10 @@ TextureImporter:
       name: MantisAttack_13
       rect:
         serializedVersion: 2
-        x: 33
-        y: 32
-        width: 29
-        height: 28
+        x: 192
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -480,10 +480,10 @@ TextureImporter:
       name: MantisAttack_14
       rect:
         serializedVersion: 2
-        x: 64
-        y: 34
-        width: 30
-        height: 28
+        x: 0
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -502,10 +502,10 @@ TextureImporter:
       name: MantisAttack_15
       rect:
         serializedVersion: 2
-        x: 95
+        x: 32
         y: 32
-        width: 31
-        height: 26
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -524,10 +524,10 @@ TextureImporter:
       name: MantisAttack_16
       rect:
         serializedVersion: 2
-        x: 129
+        x: 64
         y: 32
-        width: 29
-        height: 26
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -546,10 +546,10 @@ TextureImporter:
       name: MantisAttack_17
       rect:
         serializedVersion: 2
-        x: 163
+        x: 96
         y: 32
-        width: 27
-        height: 26
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -568,10 +568,10 @@ TextureImporter:
       name: MantisAttack_18
       rect:
         serializedVersion: 2
-        x: 194
+        x: 128
         y: 32
-        width: 28
-        height: 27
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -590,10 +590,10 @@ TextureImporter:
       name: MantisAttack_19
       rect:
         serializedVersion: 2
-        x: 5
-        y: 0
-        width: 23
-        height: 29
+        x: 160
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -612,10 +612,10 @@ TextureImporter:
       name: MantisAttack_20
       rect:
         serializedVersion: 2
-        x: 33
-        y: 1
-        width: 30
-        height: 29
+        x: 192
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -634,10 +634,10 @@ TextureImporter:
       name: MantisAttack_21
       rect:
         serializedVersion: 2
-        x: 63
-        y: 2
-        width: 33
-        height: 29
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -656,10 +656,10 @@ TextureImporter:
       name: MantisAttack_22
       rect:
         serializedVersion: 2
-        x: 97
+        x: 32
         y: 0
-        width: 31
-        height: 28
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -678,10 +678,10 @@ TextureImporter:
       name: MantisAttack_23
       rect:
         serializedVersion: 2
-        x: 127
+        x: 64
         y: 0
-        width: 97
-        height: 29
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -696,11 +696,99 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: MantisAttack_24
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a33fb3f3fbf8af5449f419ec9b95b4c2
+      internalID: -1664028448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MantisAttack_25
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33ee35dcb744f274aaad36ed28f45035
+      internalID: -1121628580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MantisAttack_26
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f5a4036df2702e49be1498a3dcb32f8
+      internalID: -2120087851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MantisAttack_27
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39d7d3ab7075f904f8ee55920d9061e1
+      internalID: -709928733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d7f4f35c4ef86b747a0115dbce0877d5
     internalID: 0
     vertices: []
     indices: 
@@ -727,6 +815,10 @@ TextureImporter:
       MantisAttack_21: 4534356669277927086
       MantisAttack_22: 3184690708114701050
       MantisAttack_23: 3128195739910057271
+      MantisAttack_24: -1664028448
+      MantisAttack_25: -1121628580
+      MantisAttack_26: -2120087851
+      MantisAttack_27: -709928733
       MantisAttack_3: 2516003604779326941
       MantisAttack_4: -8578501107419649955
       MantisAttack_5: -460716288359023056

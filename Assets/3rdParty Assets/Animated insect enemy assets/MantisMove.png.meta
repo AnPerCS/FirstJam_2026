@@ -148,10 +148,10 @@ TextureImporter:
       name: MantisMove_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 97
-        width: 26
-        height: 27
+        x: 0
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,10 +170,10 @@ TextureImporter:
       name: MantisMove_1
       rect:
         serializedVersion: 2
-        x: 33
-        y: 95
-        width: 26
-        height: 28
+        x: 32
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,10 +192,10 @@ TextureImporter:
       name: MantisMove_2
       rect:
         serializedVersion: 2
-        x: 67
-        y: 97
-        width: 26
-        height: 27
+        x: 64
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -214,10 +214,10 @@ TextureImporter:
       name: MantisMove_3
       rect:
         serializedVersion: 2
-        x: 101
-        y: 95
-        width: 26
-        height: 28
+        x: 96
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,10 +236,10 @@ TextureImporter:
       name: MantisMove_4
       rect:
         serializedVersion: 2
-        x: 3
+        x: 0
         y: 64
-        width: 28
-        height: 27
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -258,10 +258,10 @@ TextureImporter:
       name: MantisMove_5
       rect:
         serializedVersion: 2
-        x: 34
-        y: 63
-        width: 29
-        height: 27
+        x: 32
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -280,10 +280,10 @@ TextureImporter:
       name: MantisMove_6
       rect:
         serializedVersion: 2
-        x: 66
+        x: 64
         y: 64
-        width: 28
-        height: 27
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,10 +302,10 @@ TextureImporter:
       name: MantisMove_7
       rect:
         serializedVersion: 2
-        x: 98
-        y: 65
-        width: 27
-        height: 27
+        x: 96
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -324,10 +324,10 @@ TextureImporter:
       name: MantisMove_8
       rect:
         serializedVersion: 2
-        x: 3
+        x: 0
         y: 32
-        width: 28
-        height: 27
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -346,10 +346,10 @@ TextureImporter:
       name: MantisMove_9
       rect:
         serializedVersion: 2
-        x: 33
-        y: 31
-        width: 29
-        height: 27
+        x: 32
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -368,10 +368,10 @@ TextureImporter:
       name: MantisMove_10
       rect:
         serializedVersion: 2
-        x: 66
+        x: 64
         y: 32
-        width: 28
-        height: 27
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -390,10 +390,10 @@ TextureImporter:
       name: MantisMove_11
       rect:
         serializedVersion: 2
-        x: 99
-        y: 33
-        width: 27
-        height: 27
+        x: 96
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -412,10 +412,10 @@ TextureImporter:
       name: MantisMove_12
       rect:
         serializedVersion: 2
-        x: 6
+        x: 0
         y: 0
-        width: 23
-        height: 28
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -434,10 +434,10 @@ TextureImporter:
       name: MantisMove_13
       rect:
         serializedVersion: 2
-        x: 39
-        y: 1
-        width: 23
-        height: 28
+        x: 32
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -456,10 +456,10 @@ TextureImporter:
       name: MantisMove_14
       rect:
         serializedVersion: 2
-        x: 69
+        x: 64
         y: 0
-        width: 23
-        height: 28
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -478,10 +478,10 @@ TextureImporter:
       name: MantisMove_15
       rect:
         serializedVersion: 2
-        x: 99
+        x: 96
         y: 0
-        width: 23
-        height: 29
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -500,7 +500,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 3050b989db3ae28468fa2ce332cc3a1d
     internalID: 0
     vertices: []
     indices: 
