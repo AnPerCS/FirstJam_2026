@@ -27,11 +27,13 @@ public class PlayerMovement : MonoBehaviour
     private bool isGrounded;
     private bool jumpRequested;
     private Animator animator;
+    private Camera cam;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponentInChildren<Animator>();
+        cam = Camera.main;
     }
 
     void Update()
@@ -121,10 +123,23 @@ public class PlayerMovement : MonoBehaviour
 
     private void HandleRotation()
     {
-        float scroll = Input.mouseScrollDelta.y;
-        if (Mathf.Abs(scroll) > 0.01f && pivotTransform != null)
-        {
-            pivotTransform.Rotate(0, 0, scroll * rotationSensitivity);
-        }
+        if (pivotTransform == null) return;
+
+        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+        Vector2 direction = (Vector3)mousePos - pivotTransform.position;
+
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+
+        pivotTransform.rotation = Quaternion.Euler(0, 0, angle);
     }
+
+    //private void HandleRotation()
+    //{
+    //    float scroll = Input.mouseScrollDelta.y;
+    //    if (Mathf.Abs(scroll) > 0.01f && pivotTransform != null)
+    //    {
+    //        pivotTransform.Rotate(0, 0, scroll * rotationSensitivity);
+    //    }
+    //}
 }
