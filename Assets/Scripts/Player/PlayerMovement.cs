@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [Header("Movement Settings")]
     [SerializeField] private float jumpForce = 10f;
-    [SerializeField] private float rotationSensitivity = 20f;
+    //[SerializeField] private float rotationSensitivity = 20f;
 
     [Header("Detection Settings")]
     [SerializeField] private LayerMask groundLayer;

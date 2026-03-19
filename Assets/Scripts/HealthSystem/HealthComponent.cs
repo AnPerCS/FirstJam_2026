@@ -8,6 +8,7 @@ public class HealthComponent : MonoBehaviour, IDamageable
     public event System.Action OnDamaged;
     public event System.Action OnDeath;
 
+
     public void SetMaxHealth(float _maxHealth)
     {
         maxHealth = _maxHealth;
@@ -18,9 +19,16 @@ public class HealthComponent : MonoBehaviour, IDamageable
         currentHealth = maxHealth;
     }
 
-    public void TakeDamage(float damage)
+    public float GetCurrentHealth()
     {
+        return currentHealth;
+    }
+
+    public void TakeDamage(float damage)
+    {   
         currentHealth -= damage;
+        currentHealth = Mathf.Max(currentHealth, 0);
+       
         OnDamaged?.Invoke();
 
         if (currentHealth <= 0)
