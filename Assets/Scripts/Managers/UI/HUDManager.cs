@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HUDManager : MonoBehaviour
 {
@@ -9,11 +10,17 @@ public class HUDManager : MonoBehaviour
     public Sprite halfHeart;
     public Sprite emptyHeart;
 
+    [Header("Panels")]
+    public GameObject pausePanel;
+    public GameObject hudPanel;
+
     private HealthComponent playerHealth;
 
     void Start()
-    {
-        
+    {   
+        pausePanel.SetActive(false);
+        hudPanel.SetActive(true);
+
         GameObject player = GameObject.FindGameObjectWithTag("Player");
 
         if (player != null)
@@ -29,6 +36,21 @@ public class HUDManager : MonoBehaviour
         else
         {
             Debug.LogWarning("HUDManager: No object with tag 'Player' found in scene!");
+        }
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (!pausePanel.activeSelf)
+            {
+                PauseGame();
+            }
+            else
+            {
+                ResumeGame();
+            }
         }
     }
 
@@ -56,4 +78,29 @@ public class HUDManager : MonoBehaviour
         if (playerHealth != null)
             playerHealth.OnDamaged -= UpdateHealthUI;
     }
+
+    public void PauseGame()
+    {
+        Time.timeScale = 0f;
+        pausePanel.SetActive(true);
+        hudPanel.SetActive(false);
+    }
+
+    public void ResumeGame()
+    {
+        Time.timeScale = 1f;
+        pausePanel.SetActive(false);
+        hudPanel.SetActive(true);
+    }
+
+    public void GoToMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
 }
