@@ -60,8 +60,9 @@ public class Player : MonoBehaviour
     }
 
     private void OnDeath()
-    {
-
+    {   
+        this.gameObject.SetActive(false);
+        SceneManager.LoadScene("EndScene");
     }
 
     private void OnEnable()
