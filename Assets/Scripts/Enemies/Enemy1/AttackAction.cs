@@ -37,10 +37,6 @@ public partial class MeleeAttackAction : Action
                 damageable.TakeDamage(Damage.Value);
             }
         }
-        else
-        {
-            MonoBehaviour.print("nothing hit");
-        }
 
         return Status.Success;
     }

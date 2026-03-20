@@ -31,6 +31,8 @@ public class Enemy : MonoBehaviour
         healthComponent.ResetHealth();
     }
 
+   
+
     protected virtual void OnDamaged()
     {
         //play damage animation
@@ -41,15 +43,22 @@ public class Enemy : MonoBehaviour
         pool.Release(gameObject);
     }
 
+    private void OnWin()
+    {
+        gameObject.SetActive(false);
+    }
+
     private void OnEnable()
     {
         healthComponent.OnDamaged += OnDamaged;
         healthComponent.OnDeath += OnDeath;
+        Player.OnWin += OnWin;
     }
 
     private void OnDisable()
     {
         healthComponent.OnDamaged -= OnDamaged;
         healthComponent.OnDeath -= OnDeath;
+        Player.OnWin -= OnWin;
     }
 }

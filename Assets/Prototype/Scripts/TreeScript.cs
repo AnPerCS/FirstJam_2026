@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class TreeScript : MonoBehaviour
+public class Tree : MonoBehaviour
 {
     [SerializeField] private Character_Controller player;
    

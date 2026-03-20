@@ -17,6 +17,13 @@ public class EnemySpawner : MonoBehaviour
     {
         StartCoroutine(SpawnRoutine());
         StartCoroutine(WaveRoutine());
+
+        Player.OnWin += OnWin;
+    }
+
+    private void OnWin()
+    {
+        gameObject.SetActive(false);
     }
 
     private IEnumerator SpawnRoutine()
@@ -26,7 +33,6 @@ public class EnemySpawner : MonoBehaviour
             while (canSpawn)
             {
                 yield return new WaitForSeconds(Random.Range(minSpawnTime, maxSpawnTime));
-                print("Spawning");
                 SpawnEnemy();
             }
             yield return null;
