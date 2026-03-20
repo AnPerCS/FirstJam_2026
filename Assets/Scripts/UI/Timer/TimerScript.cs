@@ -1,3 +1,4 @@
+using System.IO;
 using TMPro;
 using UnityEngine;
 
@@ -8,6 +9,11 @@ public class TimerScript : MonoBehaviour
     private float m_Time;
 
     bool isRunning = false;
+
+    public float M_Time
+    {
+        get { return m_Time; }
+    }
 
     private void Awake()
     {
