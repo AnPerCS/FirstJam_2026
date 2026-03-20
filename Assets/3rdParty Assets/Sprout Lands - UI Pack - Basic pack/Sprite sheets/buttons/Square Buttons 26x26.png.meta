@@ -58,7 +58,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -150,13 +150,13 @@ TextureImporter:
       name: Square Buttons 26x26_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 152
-        width: 28
-        height: 30
+        x: 0
+        y: 144
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 16, y: 16, z: 16, w: 16}
       customData: 
       outline: []
       physicsShape: []
@@ -172,13 +172,13 @@ TextureImporter:
       name: Square Buttons 26x26_1
       rect:
         serializedVersion: 2
-        x: 58
-        y: 154
-        width: 28
-        height: 28
+        x: 48
+        y: 144
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 16, y: 16, z: 16, w: 16}
       customData: 
       outline: []
       physicsShape: []
@@ -194,13 +194,13 @@ TextureImporter:
       name: Square Buttons 26x26_2
       rect:
         serializedVersion: 2
-        x: 10
-        y: 104
-        width: 28
-        height: 30
+        x: 0
+        y: 96
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 16, y: 16, z: 16, w: 16}
       customData: 
       outline: []
       physicsShape: []
@@ -216,13 +216,13 @@ TextureImporter:
       name: Square Buttons 26x26_3
       rect:
         serializedVersion: 2
-        x: 58
-        y: 106
-        width: 28
-        height: 28
+        x: 48
+        y: 96
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 16, y: 16, z: 16, w: 16}
       customData: 
       outline: []
       physicsShape: []
@@ -238,13 +238,13 @@ TextureImporter:
       name: Square Buttons 26x26_4
       rect:
         serializedVersion: 2
-        x: 10
-        y: 56
-        width: 28
-        height: 30
+        x: 0
+        y: 48
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 16, y: 16, z: 16, w: 16}
       customData: 
       outline: []
       physicsShape: []
@@ -260,13 +260,13 @@ TextureImporter:
       name: Square Buttons 26x26_5
       rect:
         serializedVersion: 2
-        x: 58
-        y: 58
-        width: 28
-        height: 28
+        x: 48
+        y: 48
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 16, y: 16, z: 16, w: 16}
       customData: 
       outline: []
       physicsShape: []
@@ -282,13 +282,13 @@ TextureImporter:
       name: Square Buttons 26x26_6
       rect:
         serializedVersion: 2
-        x: 10
-        y: 8
-        width: 28
-        height: 30
+        x: 0
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 16, y: 16, z: 16, w: 16}
       customData: 
       outline: []
       physicsShape: []
@@ -304,13 +304,13 @@ TextureImporter:
       name: Square Buttons 26x26_7
       rect:
         serializedVersion: 2
-        x: 58
-        y: 10
-        width: 28
-        height: 28
+        x: 48
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 16, y: 16, z: 16, w: 16}
       customData: 
       outline: []
       physicsShape: []
@@ -326,7 +326,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b8490dd4aa49e9a48b8c5d3410395a74
     internalID: 0
     vertices: []
     indices: 
