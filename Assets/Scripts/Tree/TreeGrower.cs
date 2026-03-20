@@ -6,12 +6,14 @@ public class TreeGrower : MonoBehaviour
     public Transform leafTop;
     public float segmentHeight = 1.0f;
     public int initialTrunkCount = 1;
+    public int addMultiplier = 2;
 
     private int spawnedCount = 0;
 
     public void Grow(int amountToAdd)
     {
-        for (int i = 0; i < amountToAdd; i++)
+        int totalAmountToAdd = amountToAdd * addMultiplier;
+        for (int i = 0; i < totalAmountToAdd; i++)
         {
             int slotIndex = initialTrunkCount + spawnedCount;
             float yOffset = slotIndex * segmentHeight;
