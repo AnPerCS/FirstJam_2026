@@ -20,6 +20,7 @@ public class HUDManager : MonoBehaviour
     {   
         pausePanel.SetActive(false);
         hudPanel.SetActive(true);
+        Time.timeScale = 1f;
 
         GameObject player = GameObject.FindGameObjectWithTag("Player");
 
@@ -95,6 +96,7 @@ public class HUDManager : MonoBehaviour
 
     public void GoToMainMenu()
     {
+        
         SceneManager.LoadScene("MainMenu");
     }
 
